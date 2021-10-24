@@ -14,6 +14,11 @@ router.get("/test", (req, res) => {
         hello: "Sikandar ALI",
     });
 });
+router.get("/sikandar", (req, res) => {
+    res.json({
+        hello: "Sikandar ALI",
+    });
+});
 
 app.use(`/.netlify/functions/api`, router);
 
